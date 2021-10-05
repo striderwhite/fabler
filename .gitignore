@@ -32,5 +32,8 @@
 *.app
 
 # Misc
-.ipch
-.db
+*.ipch
+*.db
+*.opendb
+*.VC.db-shm
+*.VC.db-wal
