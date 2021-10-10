@@ -26,3 +26,9 @@ extern const int g_CThingPlayerCreatureVTableAddress = 0x012457FC;
 extern const int g_CTCHeroStatsVTableAddress = 0x0124F70C;
 extern const int g_CTCPhysicsControlledVTableAddress = 0x0126616C;
 extern const int g_CTCPhysicsNavigatorVTableAddress = 0x01266314;
+
+////////////////////////////////////////////////////////////
+///					Misc offsets from fable.exe
+////////////////////////////////////////////////////////////
+
+extern const int g_CTCPhysicsNavigatorinjectionCopyOffset = 0x2AFF43;
