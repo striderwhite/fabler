@@ -37,3 +37,13 @@
 *.opendb
 *.VC.db-shm
 *.VC.db-wal
+*.png
+*.CT
+*.pointerscan
+*.scandata.*
+*.scandata
+*.addresslist
+*.results.*
+*.PTR
+*.sptr
+debug/

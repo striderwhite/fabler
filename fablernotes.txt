@@ -1,0 +1,62 @@
+http://fabletlcmod.com/forum/index.php?t=msg&goto=71769&
+
+http://fabletlcmod.com/wiki/doku.php?id=documentation
+
+
+CThingPlayerCreature:
+	- Holds max/current HP
+	- Not sure what else, maybe coords
+
+CThingPlayerCreatureVTable =  0x012457FC 
+
+CThingPlayerCreature PTR 1:
+"Fable.exe" + 0x00FB8A1C -> 0x8C -> 0x14
+
+CThingPlayerCreature PTR 2:
+"Fable.exe" + 0x00FB8A1C -> 0x8C -> 0x10
+
+Offsets:
+CThingPlayerCreature + 0x0B0 = Max Health (Float)
+CThingPlayerCreature + 0x0B4 = Current Health (Float)
+
+
+
+CTCHeroStats
+
+CTCHeroStatsVTable = 0x0124F70C
+
+
+
+
+Offsets:
+
+Base + 4h = CThingPlayerCreature (VFTable: 0x012457FC)
+Base + 38h = Unknown
+Base + 3Ch = Current Gold
+Base + 40h = Highest Amount of Money Ever Had
+Base + 48h = Total Money Acquired
+Base + 4Ch = Total Money Spent
+Base + 58h = Current Will
+Base + 5Ch = Max Will
+Base + 70h = Renown
+Base + FCh = Total Fines
+
+
+
+CTCEnemy 0x0126A47C
+
+
+CEngineInternalPrimitiveRepeatedStaticMesh
+	- Seems to relate to mesh coordaintes?
+	
+CTCPhysicsControlled - Vtable 0x0126616C
+
+CCreatureDef - 0x0125B43C
+
+
+
+
+	
+
+
+
