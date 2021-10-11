@@ -6,6 +6,20 @@ struct Vector3 {
 	float x, y, z;
 };
 
+struct Vector4
+{
+	float x, y, z, w;
+};
+
+struct Vector2
+{
+	int x, y;
+};
+
+struct Matrix4x4 {
+	float x1, x2, x3, x4, y1, y2, y3, y4, z1, z2, z3, z4, w1, w2, w3, w4;
+};
+
 class CTCHeroStats
 {
 public:
@@ -49,8 +63,23 @@ static_assert(sizeof(CTCPhysicsControlled) == 0x18, "Error");
 class CTCPhysicsNavigator
 {
 public:
-	char pad_0000[12]; //0x0000
+	int32_t vTablePtr; //0x0000
+	char pad_0000[8]; //0x0004
 	Vector3 position; //0x000C
 	Vector3 rotation; //0x0018
 }; //Size: 0x0024
 static_assert(sizeof(CTCPhysicsNavigator) == 0x24, "Error");
+
+class CGameCameraManager
+{
+public:
+	int32_t vTablePtr; //0x0000
+	Vector3 cameraPosition; //0x0004
+	char pad_0010[8]; //0x0010
+	Vector3 viewX; //0x0018
+	Vector3 viewY; //0x0024
+	char pad_0030[20]; //0x0030
+	Vector3 viewZ; //0x0044
+	Vector3 viewW; //0x0050
+}; //Size: 0x005C
+static_assert(sizeof(CGameCameraManager) == 0x5C, "Error");

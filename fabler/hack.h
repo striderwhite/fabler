@@ -4,5 +4,6 @@
 
 DWORD WINAPI HackLoop(HMODULE hModule);
 void InitializeConsole();
-void PlaceJMP(BYTE* Address, DWORD jumpTo, DWORD length = 5);
 void CTCPhysicsNavigatorHook();
+void InitD3D9EndsceneHook();
+HRESULT APIENTRY hkEndScene(LPDIRECT3DDEVICE9 pDevice);

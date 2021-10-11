@@ -32,3 +32,4 @@ extern const int g_CTCPhysicsNavigatorVTableAddress = 0x01266314;
 ////////////////////////////////////////////////////////////
 
 extern const int g_CTCPhysicsNavigatorinjectionCopyOffset = 0x2AFF43;
+extern const int g_ViewModelProjectionMatrixOffset = 0xFBC69C;
